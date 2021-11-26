@@ -1,0 +1,291 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<meta author="Rafael Sch�ler de Carvalho 2017">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	
+	
+<style>
+        
+        
+        .slide {
+            position: relative;
+            padding: 25vh 10%;
+            min-height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+            -webkit-transform-style: inherit;
+            transform-style: inherit;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            width: 320px;
+            height: 240px;
+            -webkit-transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+            transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+            padding: 10px;
+            border-radius: 2px;
+            background: "red";
+            box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+        }
+        img:last-of-type {
+            -webkit-transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+            transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+        }
+        .slide:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right:0;
+        }
+        .title {
+            width: 50%;
+            padding: 5%;
+            border-radius: 5px;
+            background: rgba(240,230,220, .7);
+            box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+        }
+        .slide:nth-child(2n) .title {
+            margin-left: 0;
+            margin-right: auto;
+        }
+        .slide:nth-child(2n+1) .title {
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .slide, .slide:before {
+            background: 50% 50% / cover;  
+        }
+        .header {
+            text-align: center;
+            font-size: 175%;
+            color: "red";
+            text-shadow: 0 2px 2px #000;
+        }
+        #title {
+            background-image: url("");
+            background-attachment: fixed;  
+        }
+        #slide1:before {
+            background-image: url("");
+            -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+            z-index:7;
+        }
+        #slide2 {
+            background-image: url("");
+            background-attachment: fixed;
+        }
+        #slide3:before {
+            background-image: url("");
+            -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+            z-index:-1;
+        }
+        #slide4 {
+            background: "white";
+        }
+    </style>
+
+<style>
+
+				
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: "white";
+	font-family: 'Arial';
+}
+
+.menu ul{
+
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: "white";
+	color: "black";
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+.menu a:hover{
+	background-color: "white";
+	color: #555;
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #808000;
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #808000;
+}
+
+.menu ul ul li a{
+	background-color: "white";
+}
+
+label [for="bt_menu"]{
+	padding: 5px;
+	background-color: #6B8E23;
+	color: #800000;
+	font-family: "Arial";
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+
+#bt_menu{
+display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+@media(max-width: 800px){
+label[for="bt_menu"]{
+	display: block;
+}
+
+#bt_menu:checked ~ .menu{
+	margin-left: 0;
+}
+
+.menu{
+	margin-top: 5px;
+	margin-left: -100%;
+	transition: all .11s;
+}
+
+.menu ul li{
+	width: 100%;
+	float: none;
+}
+
+.menu ul ul{
+	position: static;
+	overflow: hidden;
+	max-height: 0;
+	transition: all .4s;
+}
+
+.menu ul li:hover ul{
+	height: auto;
+max-height: 200px;
+}
+}
+body {
+	background-image: url(images/powers_on_datasets_logo.jpg);
+}
+</style>
+
+<title>Powers On</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+
+
+
+
+
+<body bgcolor="white">
+
+<div id="top">
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu"><h1>&#9776;</h1></label>
+
+<nav class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About</a>
+				<ul>
+					<li><a href="#">Powers On</a></li>
+				</ul>
+			</li>		
+				
+			</li>
+	
+		</ul>
+
+  </nav>
+
+</div>
+
+<div id="title" class="slide header">
+        
+		
+		 
+    
+            
+	
+	
+        <h1>Ciência da Informação</h1>
+</div>
+    <div id="slide1" class="slide">
+        <div class="title">
+            <h1>Concords</h1>
+            <p>Ciência da Informação para desenvolvimento de mercado</p>
+        </div>
+    </div>
+    <div id="slide2" class="slide">
+        <div class="title">
+            <h1>Slide 2</h1>
+            <p>Expansão comercial extratégica</p>
+        </div>
+    </div>
+    <div id="slide3" class="slide">
+        <div class="title">
+            <h1>Slide 3</h1>
+            <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        </div>
+    </div>
+    <div id="slide4" class="slide header">
+        <h1>Ligue Já</h1>
+    </div>
+	
+
+
+           
+
+
+
+</body>
+
+</html>
+
